@@ -1,0 +1,426 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .cn_msg {
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    background: red;
+    width: 100%;
+    padding: 20px 65px;
+    color: #fff;
+    text-align: center;
+}
+
+i.cn_close {
+	/*display: none;*/
+	    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    top: 25%;
+}
+
+body {
+    position: relative;
+}
+i.cn_close {
+    color: #fff;
+}
+/*Old css */
+.text-center{text-align: center}
+.switch {
+  margin-top: 5px;
+  position: relative;
+  display: inline-block;
+    width: 56px;
+    height: 28px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.cn_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.cn_slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .cn_slider {
+  /* background-color: #2196F3; */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(135,85,238,1)), to(rgba(46,45,206,1)));
+    background: linear-gradient(-180deg, rgba(135,85,238,1) 0%, rgba(46,45,206,1) 100%);
+}
+
+input:focus + .cn_slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .cn_slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.cn_slider.round {
+  border-radius: 34px;
+}
+
+.cn_slider.round:before {
+  border-radius: 50%;
+} 
+
+.cn_col-md-12.mt-5.cn_col_wrap {
+    padding: 0px !important;
+}
+
+/*old css ends*/
+/* latest css*/
+
+.cn-custom-wrap {
+	float: left;
+	width: 100%;
+	margin-bottom: 19px;
+}
+
+.cn-custom-wrap h1 {
+	font-weight: 700;
+	font-size: 32px;
+	color: #1A2B88;
+	line-height: 38.73px;
+}
+
+.cn-custom-wrap h2 {
+	font-weight: 700;
+	font-size: 28px;
+	color: #1A2B88;
+	line-height: 33.89px;
+	margin-top: 0;
+}
+
+.cn-custom-wrap .cn_col-md-12, .cn-custom-wrap .bottom-wrap .cn_col-md-8, .cn-custom-wrap .bottom-wrap .cn_col-md-4 {
+	border: 2px solid #ECEEF7;
+	box-shadow: 0px 20px 50px rgb(220 224 249 / 50%);
+	border-radius: 20px;
+	padding: 2rem;
+	margin-top: 2em;
+}
+
+.cn-custom-wrap .cn_col-md-4 {
+	border-right: 1px dashed #D9DEF1;
+	text-align: center;
+}
+
+.cn-custom-wrap .icons-wrap p {
+	color: #7D7D7D;
+}
+
+.cn-custom-wrap .cn_col-md-8 {
+		text-align: center;
+	}
+	
+.cn-custom-wrap .icons-wrap {
+	float: left;
+	width: 100%;
+}
+
+.cn-custom-wrap .icons-wrap .cn_col-md-3 {
+	border: 1px solid #fff;
+	text-align: center;
+	background: #FCFCFC;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 7px;
+	margin: 0px 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.cn-custom-wrap .icons-wrap .row {
+	justify-content: center;
+}
+
+.cn-custom-wrap p {
+	float: left;
+	width: 100%;
+	margin-bottom: 0px;
+	font-size: 15px;
+	line-height: 19.36px;
+	color: #3F3939;
+}
+
+.cn_col-md-12.bottom-wrap {
+	border: none;
+	box-shadow: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.cn-custom-wrap h3 {
+	font-weight: 700;
+	font-size: 24px;
+	color: #1A2B88;
+	line-height: 29.05px;
+	margin-top: 0;
+	text-align: left;
+}
+
+table.cn-table tr th, table.cn-table tr td {
+	color: #949494;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: left;
+	line-height: 19px;
+	padding: 15px 0px;
+}
+
+table.cn-table tr.cn_data td {
+	border-top: 1px solid #EFEFEF;
+}
+
+table.cn-table {
+	float: left;
+	width: 100%;
+}
+
+table.cn-table tr td {
+	color: #000;
+	font-weight: bold;
+}
+
+table.cn-table select#cn_time_drp {
+	font-size: 16px;
+	border: 1px solid #E4CFCF;
+	border-radius: 7px;
+}
+
+table.cn-table select#cn_time_drp {
+	float: left;
+	width: auto;
+}
+
+table.cn-table .ampm-picker {
+	font-size: 10px;
+	border: none;
+	background: rgba(93, 169, 224, 0.55);
+	padding: 0.7em;
+	color: #403994;
+	border-radius: 7px;
+	position: relative;
+	top: 2px;
+	left: 10px;
+}
+
+table.cn-table .ampm-picker .period {
+	cursor: pointer;
+	position: relative;
+}
+
+table.cn-table .chosen-period {
+font-weight: bold;
+color: #00f;
+border-radius: 7px;
+background: rgba(89, 255, 225, 0.55);
+}
+table.cn-table .cn_time_wrap a {
+	font-size: 10px;
+	line-height: 12.1px;
+	font-weight: bold;
+	text-decoration: none;
+}	
+
+table.cn-table .cn_time_wrap .cn_add_more_time {
+	color: #1A2B88;
+	margin-right: 5px;
+}
+
+table.cn-table .cn_time_wrap .cn_eliminate_time {
+	color: #D61F2A;
+	margin-left: 5px;
+}
+
+table.cn-table .cn_time_wrap {
+	text-align: center;
+}
+
+.cn-custom-wrap button.cn_btn, .cn-custom-wrap button.save_banner_message {
+	background: rgba(93, 169, 224, 0.1);
+	border: 0px;
+	border-radius: 12px;
+	font-size: 14px;
+	color: #1A2B88;
+	line-height: 17px;
+	max-width: 164px;
+	height: 37px;
+	width: 100%;
+	float: right;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.cn-custom-wrap .cn_col-md-12.bottom-wrap .cn_col-md-8, .cn-custom-wrap .cn_col-md-12.bottom-wrap .cn_col-md-4 {
+	padding: 2em !important;
+}
+
+.cn-custom-wrap textarea.cn_textarea { 
+	background: #FEFEFE;
+	border: 1px solid #CFC1C1;
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: 2em;
+	width: 100%;
+	font-size: 16px;
+}
+
+.cn-custom-wrap button.cn_btn_msg, .cn-custom-wrap button.save_banner_message {
+	float: unset !important;
+	width: 80px !important;
+	margin-top: 1em;
+}
+
+.cn-custom-wrap .cn_col-md-12.bottom-wrap .cn_col-md-8 {
+	margin-right: 2em;
+}
+
+@media (min-width: 768px) {
+	.cn-custom-wrap .cn_col-md-12.bottom-wrap .cn_col-md-8 {
+		-ms-flex: 0 0 66.666667%;
+		flex: 0 0 65%;
+		max-width: 65%;
+	}
+	
+	.cn-custom-wrap .cn_col-md-12.bottom-wrap .cn_col-md-4 {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 32.5%;
+		max-width: 32.5%;
+	}
+}
+
+.cn-custom-wrap textarea.cn_textarea::placeholder {
+	color: #918585;
+}
+
+.cn_col-md-3 input:checked .cn_col-md-3 {
+	background: rgba(10, 45, 227, 0.1);
+}
+
+.cn-custom-wrap .icons-wrap .cn_col-md-3 {
+	position: relative;
+}
+
+.cn-custom-wrap .icons-wrap .cn_col-md-3 input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+}
+
+.icons-wrap .cn_col-md-3.active_radio {
+	border: 1px solid #0A2DE3;
+	background: rgba(10, 45, 227, 0.1);
+}
+
+table.cn-table tr.cn_data.key.date-time-row td {
+	width: 25%;
+}
+
+#cn_eliminate_time {
+	max-width: 137px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#cn_eliminate_time .cn_eliminate_time {
+	max-width: 200px;
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+
+#add_custom_more_time .cn_closed_open_label {
+	position: relative;
+	top: -6px;
+}
+
+#add_custom_more_time .cn_closed_open_label {
+	color: #D61F2A;
+	position: relative;
+	font-size: 10px;
+	top: 1px;
+}
+
+.period input.cm_radio {
+	position: absolute;
+	opacity: 0;
+	top: 3px;
+}
+
+/*latest css ends */
+
+.select2-container--default .select2-results > .select2-results__options {
+max-height: 80px;
+overflow-y: auto;
+}
+
+.select2-search--dropdown .select2-search__field {
+    padding: 0px @important;
+}
+
+.cn-custom-wrap span.select2.select2-container {
+    float: left;
+}
+
+.select2-container.select2-container--default.select2-container--open input.select2-search__field {
+    line-height: 28px;
+    height: 0;
+    border-color: #5897fb;
+    background: url(http://select2.github.io/select2/select2-3.5.3/select2.png) no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-right: unset;
+}
+
+.cn-table h2.cn-heading {
+    margin-bottom: 5px;
+}
+
+.cn-table td span.cn-small-text {
+    color: #949494;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+.cn-table a.cn_clear_all {
+    color: #D61F2A;
+    font-size: 16px;
+    text-decoration: none;
+}
